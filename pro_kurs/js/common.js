@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	function wResize() {
+		$("header").css("height", $(window).height());
+	};
+	wResize();
+	$(window).resize(function() {
+		wResize()
+	});
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
