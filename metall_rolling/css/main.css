@@ -15,14 +15,14 @@
 	opacity: 1;
 }
 
-body input:focus:required:invalid,
+/* body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
 }
 body input:required:valid,
 body textarea:required:valid {
 	
-}
+} */
 
 html.js .loader {
 	background: none repeat scroll 0 0 #ffffff;
@@ -51,14 +51,200 @@ html.js .loader_inner {
 }
 
 body {
-	font-family: sans-serif;
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
 	overflow-x: hidden;
+	background-color: #fafafa;
 }
 .hidden {
 	display: none;
+}
+
+section {
+	padding: 70px 0;
+}
+
+h1,
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+}
+
+h2 {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 70px;
+}
+
+.button_wrap {
+	text-align: right;
+}
+
+.button {
+	border: 0;
+	background-color: #fd5f46;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 10px 18px;
+	font-size: 14px;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	box-shadow: 0 3px 0 #be331e;
+}
+
+.button:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main_header {
+	color: #ffffff;
+	min-height: 655px;
+	background-color: #191c21;
+	position: relative;
+	font-weight: 400;
+	padding: 50px 0;
+}
+
+.logo {
+	text-transform: uppercase;
+}
+
+.logo span {
+	color: #fd5f46;
+}
+
+.top_phone svg {
+	margin-right: 15px;
+}
+
+.top_header {
+	margin-top: 200px;
+}
+
+.top_header h1 {
+	font-size: 36px;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+
+.img_header {
+    position: relative;
+    width: 742px;
+    height: 530px;
+}
+
+.img_header::after {
+    position: absolute;
+    content: "";
+    bottom: -50px;
+    right: 123px;
+    background-image: url(../img/terminator-2.jpg);
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header_descr {
+	margin-top: 0;
+	letter-spacing: 2px;
+	font-size: 18px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	color: rgba(255, 255, 255, .4);
+}
+
+.product_item {
+	padding: 0;
+}
+
+.product_item img {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.product_item_cont {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	text-align: center;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, .8));
+}
+
+.product_item_cont h4 {
+	margin-top: 170px;
+}
+
+.hidden_block {
+	opacity: 0;
+	color: #ffffff;
+    width: 270px;
+    height: 205px;
+    margin: 10px 10px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+	top: 0;
+	text-align: center;
+	transition: all .5s;
+}
+
+.hidden_block h4 {
+	margin-bottom: 55px;
+}
+
+.hidden_block a {
+	color: #ffffff;
+	font-size: 28px;
+}
+
+.hidden_block button {
+	background-color: #000000;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.hidden_block button .fa-arrow-down {
+	display: block;
+}
+
+.product_item_block:hover .hidden_block {
+	opacity: 1;
+}
+
+.product_item_block:hover .product_item_cont {
+	opacity: 0;
+}
+
+.s_history {
+	position: relative;
+	background-image: url(../img/terminator.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 685px;
+}
+
+.s_history h2 {
+	margin-top: 80px;
+}
+
+.transpar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .9);
 }
