@@ -26,11 +26,18 @@
 	.product_item {
 		text-align: center;
 	}
+
+	.form_block {
+		margin: 0;
+		margin-top: 75px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+	.hisctory_item {
+		min-height: 195px;
+	}
 
 }
 
