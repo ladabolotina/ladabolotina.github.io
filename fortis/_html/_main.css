@@ -293,6 +293,7 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 
 article {
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 article a {
