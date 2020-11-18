@@ -55,6 +55,9 @@ body textarea:required:valid
 				background-color: $main-color
 				display: block
 				transform: translate(-50%, 0)
+		h3
+			text-align: center
+			margin-top: 50px
 	.section_bottom
 		background-color: #e5e5e5
 		padding: 50px 0
@@ -134,7 +137,49 @@ body textarea:required:valid
 	.info_item
 		margin-top: 0
 	
+.s2_items
+	padding-bottom: 40px
+	.s2_item
+		text-align: center
+		color: #111111
+		margin-bottom: 75px
+		display: block
+		> span
+			display: block
+		&_text
+			font-family: 'RalewayBold', $helvetica
+			font-size: 14px
+			line-height: 20px
+	.img_wrap
+		position: relative
+		display: block
+		padding-bottom: 32px
+		margin-bottom: 12px
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translate(-50%, 0)
+			height: 1px
+			background-color: $main-color
+			width: 58px
+		img
+			max-width: 75px
+			max-height: 60px
+			width: auto
+	img
+		width: 100%
+		max-width: 100%
 
+.s2_items_container
+	text-align: center
+
+.s2_item_wrap
+	display: inline-block
+	float: none
+	padding: 0 15px
+	width: 185px
 
 
 //ALWAYS END
