@@ -5,6 +5,9 @@ $(function() {
 		$(".main_mnu").slideToggle();
 	});
 
+	$(".section_content .info_item").equalHeights();
+	$(".s_bottom .info_item").equalHeights();
+
 	//SVG Fallback
 	// if(!Modernizr.svg) {
 	// 	$("img[src*='svg']").attr("src", function() {

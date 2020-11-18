@@ -27,6 +27,113 @@ body input:required:valid,
 body textarea:required:valid
 	color: #ffffff
 
+.homesect
+	position: relative
+	padding-top: 70px
+	background-color: #f9f9f9
+	&::before
+		content: ''
+		position: absolute
+		top: -5px
+		height: 6px
+		width: 100%
+		background-image: url(../img/bah_1.png)
+	.section_head
+		margin-bottom: 65px
+		p
+			margin-top: 60px
+		h2
+			text-align: center
+			position: relative
+			&::after
+				position: absolute
+				bottom: -30px
+				left: 50%
+				content: ''
+				height: 4px
+				width: 165px
+				background-color: $main-color
+				display: block
+				transform: translate(-50%, 0)
+	.section_bottom
+		background-color: #e5e5e5
+		padding: 50px 0
+		text-align: center
+
+.section_1
+	.section_content
+		background-image: url(../img/s1_gray_bg.png)
+		background-repeat: no-repeat
+		background-position: bottom
+	.section_bottom
+		background-color: #2c3949
+
+.section_content
+	position: relative
+	padding-bottom: 90px
+	.info_item_wrap
+		&:nth-child(4),
+		&:last-child
+			margin-bottom: 0
+			
+	.s1_bottom_triangle
+		text-align: center
+		height: 90px
+		width: 100%
+		position: absolute
+		bottom: 0
+		background-image: url(../img/s1_triangle.svg)
+		z-index: 2
+		background-position: top
+		background-size: 100% 100%
+		.triangle_logo
+			width: 116px
+			margin-top: 30px
+		.scales
+			width: 160px
+			position: absolute
+			top: -130px
+			transform: translate(-50%, 0)
+			left: 50%
+			z-index: -1
+
+.s1_bottom
+	margin-top: -1px
+	padding: 15px 0 65px
+	background-color: #394b5f
+	.info_item
+		margin: 15px 0 0
+		p
+			color: #ffffff
+			border-color: #546476
+	.info_item_wrap
+		&:nth-child(2)
+			margin-top: 60px
+			
+
+
+.info_item
+	padding-left: 34px
+	max-width: 264px
+	line-height: 19px
+	margin: 54px 0
+	h4
+		margin-top: 0
+		margin-bottom: 10px
+		a
+			font-size: 24px
+			line-height: 13px
+			text-decoration: underline
+			text-transform: none
+	p
+		font-size: 16px
+		border-bottom: 1px solid #dee1e5
+		padding-bottom: 20px
+
+.info_item_wrap:nth-child(2)
+	.info_item
+		margin-top: 0
+	
 
 
 

@@ -45,6 +45,16 @@
 	.main_mnu
 		top: 50px
 
+	.top_line
+		min-height: 140px
+
+	.section_content
+		.s1_bottom_triangle
+			background-size: cover
+
+	.info_item
+		margin: 40px 0
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -70,6 +80,29 @@
 		-ms-animation: none !important
 		animation: none !important
 
+	.info_item
+		text-align: center
+		max-width: 100%
+		margin-top: 20px
+		margin-bottom: 20px
+		border-bottom: 1px solid #d6dae0
+		p
+			border: none
+		&:first-child
+			margin-top: 0
+		h4
+			margin-top: 20px
+
+	.s1_bottom
+		.info_item
+			p
+				border-color: #546476
+	.info_item_wrap:last-child
+		.info_item
+			border-color: transparent
+	.section_1
+		.section_content
+			background-position: bottom
 
 
 

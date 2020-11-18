@@ -25,6 +25,7 @@ a:active
 
 h1, h2, h3, h4, h5, h6
 	@extend .headers
+	line-height: 1.4em
 
 h1
 	font-size: 48px
@@ -255,10 +256,18 @@ strong
 	padding: 12px 30px
 	border-bottom: 3px solid #b97200
 	transition: all .5s ease
+	text-decoration: none
 	&:hover
+		color: #111111
+		text-decoration: none
 		background-color: #ffb338
 	&:active
+		color: #111111
+		text-decoration: none
 		background-color: #db8c0e
+	&:focus
+		color: #111111
+		text-decoration: none
 	
 .arrow_bottom
 	display: inline-block
