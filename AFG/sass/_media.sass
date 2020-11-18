@@ -4,12 +4,46 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.main_mnu
+		display: none
+		float: right
+		min-width: 295px
+		text-align: right
+		background-color: #1c242c
+		top: 10px
+		border-bottom: 4px solid #111821
+		border-top: 4px solid #232d3b
+		font-size: 18px
+		margin-top: 10px
+		position: absolute
+		right: 15px
+		z-index: 2
+		ul
+			li
+				display: block
+				line-height: 0
+				padding: 0
+			a
+				display: block
+				line-height: 48px
+				padding: 0 20px
+				background-color: transparent
+				transition: all .5s ease
+				&:hover
+					background-color: #273646
+					
+	.phone
+		padding-right: 63px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.header_wrap 
+		margin-top: 0
+		h1
+			margin-top: 0
+	.main_mnu
+		top: 50px
 
 
 /* Small Devices, Tablets */
@@ -37,9 +71,21 @@
 		animation: none !important
 
 
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.phone_wrap
+		.phone
+			font-size: 18px
+			line-height: 34px
+			padding-right: 50px
+		.toggle_mnu
+			line-height: 34px
+			margin-top: 15px
+	.logo
+		img
+			width: 70px
 
 
 /* Custom, iPhone Retina */
@@ -71,5 +117,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
+	.main_mnu
+		display: block !important
+	a
+		outline: none !important
 
