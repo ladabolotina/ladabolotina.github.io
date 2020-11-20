@@ -1,0 +1,284 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 22px
+	overflow-x: hidden
+	color: #333333
+	font-size: 15px
+	font-family: "RalewayRegular", sans-serif
+
+a,
+a:hover,
+a:focus,
+a:active
+	color: $main-color
+	text-decoration: underline
+
+.headers
+	font-family: 'PFCentroSlabProMedium', $helvetica
+	text-transform: uppercase
+	font-weight: 400
+	color: $headers-color
+
+h1, h2, h3, h4, h5, h6
+	@extend .headers
+	line-height: 1.4em
+
+h1
+	font-size: 48px
+	text-transform: none
+
+h2
+	font-size: 30px
+
+h3
+	font-size: 24px
+
+b,
+strong
+	font-family: "RarewayBold", sans-serif
+
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+
+.ulmnu
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+
+.main_head
+	min-height: 620px
+	background-size: cover
+	background-position: center
+	position: relative
+	padding-bottom: 120px
+	&::before
+		@extend .before
+		background-color: #394b5f
+		opacity: .85
+	h1
+		line-height: 50px
+
+.top_line
+	padding-top: 45px
+	min-height: 160px
+	background-image: url(../img/top_gradient.png)
+	background-repeat: repeat-x
+
+.logo
+	opacity: .95
+	img
+		width: 100px
+
+.main_mnu
+	font-size: 14px
+	li
+		line-height: 48px
+		padding: 0 10px
+		&.active
+			a
+				color: $main-color
+				text-decoration: underline
+		a:hover
+			color: $main-color
+			text-decoration: underline
+	ul
+		@extend .ulmnu
+	a
+		text-decoration: none
+		color: #ffffff
+
+.phone_wrap
+	position: relative
+	.phone
+		opacity: .9
+		color: #ffffff
+		font-family: 'RobotoBold', $helvetica
+		font-size: 19px
+		line-height: 48px
+		text-align: right
+		white-space: nowrap
+	.toggle_mnu
+		display: block
+		float: right
+		position: absolute
+		right: 0
+		top: 0
+		text-align: center
+		line-height: 48px
+
+.toggle_mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin: 22px auto 0
+
+
+.toggle_mnu span:after,
+.toggle_mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+.toggle_mnu span:after
+	top: 9px
+
+.toggle_mnu span 
+	position: relative
+	display: block
+
+
+.toggle_mnu span,
+.toggle_mnu span:after,
+.toggle_mnu span:before 
+	width: 100%
+	height: 2px
+	background-color: #ffffff
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+
+/* on activation */
+.toggle_mnu.on span
+	background-color: transparent
+
+.toggle_mnu.on span:before
+	transform: rotate(45deg) translate(5px, 5px)
+
+.toggle_mnu.on span:after
+	transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle_mnu.on + #menu
+	opacity: 1
+	visibility: visible
+
+.header_wrap
+	margin-top: 40px
+	h1
+		margin-top: 120px
+		padding-bottom: 10px
+		color: #ffffff
+		display: inline-block
+		border-bottom: 8px solid $main-color
+	ul
+		@extend .ulmnu
+		margin-top: 10px
+		li
+			display: block
+			position: relative
+			font-size: 18px
+			margin-bottom: 12px
+			font-family: "RalewaySemiBold", $helvetica
+			padding-left: 16px
+			&::before
+				content: ''
+				display: block
+				width: 6px
+				height: 11px
+				+triangle(12px, $main-color, right)
+				position: absolute
+				top: 10px
+				left: 0
+			a
+				text-decoration: none
+				color: #ffffff
+				&:hover
+					text-decoration: underline
+
+.header_left
+	margin-bottom: 50px
+
+.forms
+	background-color: transparentize(#243343, .2)
+	padding: 35px 35px 30px
+	color: #97a4b2
+	font-size: 14px
+	border-bottom: 3px solid #1a222b
+	h4
+		font-family: 'PFCentroSlabProMedium', $helvetica
+		color: #ffffff
+		font-size: 33px
+		text-transform: none
+		margin: 0
+	p
+		line-height: 23px
+		margin-top: 15px
+	label
+		margin-top: 20px
+		margin-bottom: 20px
+		display: block
+		color: #778390
+		margin-top: 22px
+		span
+			letter-spacing: 1.5px
+			display: block
+			margin-bottom: 6px
+	input
+		background-color: #34465a
+		text-indent: 10px
+		padding: 10px 0
+		display: block
+		width: 100%
+		border: none
+		box-shadow: 0 -3px #1f2a36 
+		transition: all .5s ease
+		font-family: 'PFCentroSlabProMedium', $helvetica
+		font-size: 18px
+		&:focus
+			background-color: #394e65
+			box-shadow: 0 -6px #1f2a36 
+	.buttons
+		margin-top: 10px
+
+.button_wrap
+	text-align: center
+
+.buttons
+	display: inline-block
+	border: none
+	background-color: $main-color
+	color: #111111
+	font-size: 22px
+	font-family: 'PFCentroSlabProBold', $helvetica
+	padding: 12px 30px
+	border-bottom: 3px solid #b97200
+	transition: all .5s ease
+	text-decoration: none
+	&:hover
+		color: #111111
+		text-decoration: none
+		background-color: #ffb338
+	&:active
+		color: #111111
+		text-decoration: none
+		background-color: #db8c0e
+	&:focus
+		color: #111111
+		text-decoration: none
+	
+.arrow_bottom
+	display: inline-block
+	width: 40px
+	height: 40px
+	background-image: url(../img/arrow_down.png)
+	position: relative
+	top: 50px
+	z-index: 2
+	cursor: pointer
+	opacity: .7
+	transition: all .25s ease
+	&:hover
+		opacity: 1
