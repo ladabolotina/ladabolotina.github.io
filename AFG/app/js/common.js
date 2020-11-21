@@ -3,10 +3,26 @@ $(function() {
 	$(".toggle_mnu").click(function(){
 		$(this).toggleClass("on");
 		$(".main_mnu").slideToggle();
+		return false;
 	});
 
-	$(".section_content .info_item").equalHeights();
-	$(".s_bottom .info_item").equalHeights();
+	$(".section_1 .section_content .info_item").equalHeights();
+	$(".section_3 .section_content .info_item").equalHeights();
+	$(".s1_bottom .info_item").equalHeights();
+	$(".s2_item").equalHeights();
+	$(".s2_item .img_wrap").equalHeights();
+
+	$(".section_4").waypoint(function() {
+		$(".section_4 .card").each(function(index) {
+			var ths = $(this);
+			setInterval(function() {
+				ths.removeClass("card-off").addClass("card-on");
+			}, 150*index);
+		});
+	}, {
+		offset : "20%"
+	});
+
 
 	//SVG Fallback
 	// if(!Modernizr.svg) {

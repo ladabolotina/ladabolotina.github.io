@@ -35,9 +35,23 @@
 	.phone
 		padding-right: 63px
 
+	.s3_img_wrap
+		margin-left: 82px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.s3_img_wrap
+		display: none
+	.section_3 
+		.info_item_wrap .info_item
+			margin: 0 0 60px 0!important
+		.section_content
+			background-image: none
+			min-height: auto
+	.s3_img_wrapper
+		display: none
+
 	.header_wrap 
 		margin-top: 0
 		h1
@@ -55,6 +69,9 @@
 	.info_item
 		margin: 40px 0
 
+	.cards
+		.card-on
+			margin-top: 30px
 
 
 /* Small Devices, Tablets */
@@ -82,7 +99,6 @@
 		animation: none !important
 
 	.info_item
-		text-align: center
 		max-width: 100%
 		margin-top: 20px
 		margin-bottom: 20px
@@ -105,6 +121,15 @@
 		.section_content
 			background-position: bottom
 
+	.section_3
+		.section_content
+			padding-top: 10px
+			.info_item
+				border-color: #546476
+				p
+					margin-bottom: 0
+
+
 
 
 /* Extra Small Devices, Phones */
@@ -124,6 +149,8 @@
 	.s2_item_wrap
 		padding: 0 10px
 		width: 140px
+
+
 
 
 /* Custom, iPhone Retina */
