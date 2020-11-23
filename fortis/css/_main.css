@@ -65,6 +65,7 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 	display: inline;
 	font-size: 14px;
 	font-family: "OpenSansBold", sans-serif;
+	vertical-align: sub;
 }
 
 .box_back .btn {
