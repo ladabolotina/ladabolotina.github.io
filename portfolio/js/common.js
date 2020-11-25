@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 	function heightDetect() {
 		$(".main_head").css("height", $(window).height());
-	};
+	}
 	heightDetect();
 	$(window).load(function() {
 		heightDetect();
@@ -47,7 +47,7 @@ $(".toggle_mnu").click(function() {
 		$(".top_text").addClass("h_opacify");
 		$(".top_mnu").fadeIn(600);
 		$(".top_mnu li a").addClass("fadeInUp animated");
-	};	
+	}
 });
 
 $(".portfolio_item").each(function(i) {
